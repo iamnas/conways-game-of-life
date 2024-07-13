@@ -1,30 +1,86 @@
-# React + TypeScript + Vite
+# Conway's Game of Life
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A TypeScript implementation of Conway's Game of Life, built using Vite.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Conway's Game of Life is a cellular automaton devised by mathematician John Horton Conway. This project is an implementation of the game using TypeScript and Vite, providing an interactive interface to explore the fascinating patterns and behaviors of cellular automata.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Interactive grid to set initial cell states
+- Start, pause, and reset the simulation
+- Seed the grid with random initial states
+- Clear the grid to start from scratch
+- Adjustable speed of the simulation (Slow, Medium, Fast)
+- Responsive design
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/conways-game-of-life.git
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd conways-game-of-life
+    ```
+
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+## Usage
+
+To run the project locally:
+
+1. Start the development server:
+    ```sh
+    npm run dev
+    ```
+
+2. Open your browser and navigate to `http://localhost:3000`.
+
+## Development
+
+For development purposes, you can use the following scripts:
+
+- `npm run dev`: Starts the development server
+- `npm run build`: Builds the project for production
+- `npm run preview`: Previews the production build
+- `npm run lint`: Lints the TypeScript files
+
+## Technologies Used
+
+- [Vite](https://vitejs.dev/): Next Generation Frontend Tooling
+- [TypeScript](https://www.typescriptlang.org/): Typed JavaScript at Any Scale
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Create a pull request
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
